@@ -1,0 +1,352 @@
+/* ### 版面設計 ###*/
+
+body {
+   
+    font-family: Arial, '微軟正黑體', sans-serif;
+}
+
+
+
+
+
+
+
+/* L-size bigger than 980px; M-size 640~979px; S-size smaller than 639px */
+
+#container {
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* overflow:hidden 將多的區塊隱藏，版面比較好看 */
+
+#topnews {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+#odernews {
+   
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ### 細節設計 ###*/
+
+
+/* HEADER LOGO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+
+
+/* container設960，三分法原則，site img 設300-360都蠻好看的 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER NAV */
+
+
+/* 可用google font 尋找喜歡的瀏覽器字體 https://fonts.google.com/ */
+
+
+/* padding和margin差異可看講義*/
+
+nav {
+    float: right;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* list-style-type: none 可把原本有序列表的點點取消*/
+
+nav li {
+    list-style-type: none;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 用CSS做選單!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+/*  display: block 每個連結字體以區塊顯示*/
+
+
+/*  float: left margin-top 連結字體靠左向上對齊*/
+
+
+/*  text-decoration: none 取消底線*/
+
+
+/*  border-bottom: solid 3px transparent 製作一個透明的下底線*/
+
+
+/*  color請參考CSS色碼對照表 https://www.toodoo.com/db/color.html */
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #2F4F4F;
+}
+
+
+
+
+
+
+
+
+
+
+/*  nav li a:hover 當滑鼠在連結文字上徘徊的時候 */
+
+nav li a:hover {
+    border-bottom-color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  HEADERPOST 圖片*/
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+
+
+/* container設960，三分法原則，headerpost設620-660都蠻好看的 */
+
+
+
+
+
+
+
+
+
+
+
+/*  HEADERPOST LEAD*/
+
+
+
+
+
+/* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+
+
+/* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+
+
+
+
+
+/* POST 圖文 */
+
+
+/* container設960，216x4+32x3=960 */
+
+.post {
+    float: left;
+    width: 216px;
+    margin-right: 30px;
+    margin-left: 95px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+/* .post:last-child 以後新增的post，只要是最後一個，右邊界皆為0 */
+
+.post:last-child {
+    margin-right: 0;
+}
+
+
+/* 每四個為一組的post，右邊界皆為0 */
+
+.post+.post+.post+.post {
+    margin-right: 0;
+}
+
+
+.post img {
+    width: 216px;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
+
+}
+
+
+}
+
+.post h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+.post p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.post .data {
+    float: left;
+    margin: 0;
+}
+
+
+
+.post a {
+    color: #2F4F4F;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.post a:hover {
+    background-color:#F5F5F5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ### FOOTER ###*/
+
+
+
+footer p {
+    
+    margin-top: 10px;
+    color: #ffffff
+}
+
+
+
+
